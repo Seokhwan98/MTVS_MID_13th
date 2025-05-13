@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Game/Main.unity
+    guid: 9400b7d3a1fdc8643968f14b493c0970
+  - enabled: 1
+    path: Assets/Scenes/Game/Option.unity
+    guid: 7a19febc84da5c047b6326e5df56c574
+  - enabled: 1
     path: Assets/Scenes/ARDemoScene.unity
     guid: 93b343dd87cfd9548945def98418b921
   m_configObjects:
