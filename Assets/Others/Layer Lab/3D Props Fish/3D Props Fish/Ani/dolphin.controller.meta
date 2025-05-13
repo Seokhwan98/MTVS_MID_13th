@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6262bc21871a00245816b6d70cefc136
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 282104
+  packageName: 3D Fish
+  packageVersion: 1.0.1
+  assetPath: Assets/Layer Lab/3D Props Fish/3D Props Fish/Ani/dolphin.controller
+  uploadId: 715913
