@@ -10,7 +10,6 @@ public class WebSample : MonoBehaviour
     [SerializeField] private Image image;
     [SerializeField] private AudioSource audioSource;
     
-    private const string URL = "http://192.168.0.39:7788";
     private InputField _inputField;
 
     private void Awake()
@@ -21,7 +20,7 @@ public class WebSample : MonoBehaviour
 #region HelloWorld
     public void SendHelloWorld()
     {
-        StartCoroutine(WebApiClient.Get<string>("hello-world", (message) =>
+        StartCoroutine(WebApiClient.Get<string>("test", (message) =>
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("요청 성공");

@@ -11,9 +11,13 @@ public static class WebApiClient
     {
         using var request = UnityWebRequest.Get($"{BASE_URL}/{endpoint}");
         request.SetRequestHeader("Content-Type", "text/plain");
-
+        
+        Debug.Log($"요청시작: {request.url}");
+        
         yield return request.SendWebRequest();
 
+        Debug.Log($"요청 끝");
+        
         if (WebApiErrorHandler.Check(request)) yield break;
 
         try
