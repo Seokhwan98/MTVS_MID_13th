@@ -12,6 +12,10 @@ public class MulipleImageTracker : MonoBehaviour
     private GameObject[] placeablePrefabs;
 
     private Dictionary<string, GameObject> spawnedObjects;
+    
+    private bool centerInitialized = false;
+    private Vector3 tableCenter;
+    [SerializeField] private float centerOffsetDistance = 1.0f;
 
     private void Awake()
     {
@@ -32,6 +36,13 @@ public class MulipleImageTracker : MonoBehaviour
     {
         foreach (ARTrackedImage trackedImage in eventArgs.added)
         {
+            if (!centerInitialized)
+            {
+                // 최초 인식된 마커 기준으로 테이블 중심 계산
+                tableCenter = trackedImage.transform.position + trackedImage.transform.forward * centerOffsetDistance;
+                centerInitialized = true;
+                Debug.Log($"[reset]center : {tableCenter}");
+            }
             UpdateSpawnObject(trackedImage);
         }
 
@@ -55,20 +66,44 @@ public class MulipleImageTracker : MonoBehaviour
 
     private void UpdateSpawnObject(ARTrackedImage trackedImage)
     {
-        Debug.Log(trackedImage.name);
-        
         string referenceImageName = trackedImage.referenceImage.name;
+        GameObject obj = spawnedObjects[referenceImageName];
+
+        obj.transform.position = tableCenter;
+
+        // 콘텐츠는 마커를 바라보게 회전
+        Vector3 lookDirection = trackedImage.transform.position - tableCenter;
+        lookDirection.y = 0f; // 수평 회전만
+
+        if (lookDirection != Vector3.zero)
+            obj.transform.rotation = Quaternion.LookRotation(lookDirection);
+
+        obj.SetActive(true);
         
-        spawnedObjects[referenceImageName].transform.position = trackedImage.transform.position;
-        spawnedObjects[referenceImageName].transform.rotation = trackedImage.transform.rotation;
-        
-        spawnedObjects[referenceImageName].SetActive(true);
+        SeaControl sc = obj.GetComponentInChildren<SeaControl>();
+        if (sc != null)
+        {
+            sc.InitializeBounds(); // 바운드를 옮긴 위치로 갱신
+        }
+    }
+    
+    public void ResetTableCenter()
+    {
+        Debug.Log("[reset]");
+
+        centerInitialized = false;
+
+        // 모든 오브젝트 비활성화
+        foreach (var obj in spawnedObjects.Values)
+        {
+            obj.SetActive(false);
+        }
     }
 
     private void Update()
     {
        //확인용 디버그 로그
-       Debug.Log($"Image: {trackedImageManager.trackables.count} tracked");
+       // Debug.Log($"Image: {trackedImageManager.trackables.count} tracked");
        foreach (var trackedImage in trackedImageManager.trackables)
        {
            Debug.Log($"Image : {trackedImage.referenceImage.name}\n" +
