@@ -12,10 +12,14 @@ public class MulipleImageTracker : MonoBehaviour
     private GameObject[] placeablePrefabs;
 
     private Dictionary<string, GameObject> spawnedObjects;
+    private Dictionary<string, Vector3> tableCenters = new();
+    private HashSet<string> initialized = new HashSet<string>();
     
     private bool centerInitialized = false;
     private Vector3 tableCenter;
     [SerializeField] private float centerOffsetDistance = 1.0f;
+    [SerializeField] private float disableDistanceThreshold = 5f;
+
 
     private void Awake()
     {
@@ -36,79 +40,67 @@ public class MulipleImageTracker : MonoBehaviour
     {
         foreach (ARTrackedImage trackedImage in eventArgs.added)
         {
-            if (!centerInitialized)
+            var name = trackedImage.referenceImage.name;
+            if (initialized.Contains(name)) continue;      // 이미 초기화했던 마커면 스킵
+            initialized.Add(name);
+
+            var obj = spawnedObjects[name];
+            obj.transform.SetParent(trackedImage.transform, false);
+            obj.transform.localPosition = new Vector3(0, 0, centerOffsetDistance);
+            obj.transform.localRotation = Quaternion.identity;
+            obj.SetActive(true);
+            
+            // ✅ 오브젝트 내부의 SeaControl이 있다면 바운드 재계산
+            SeaControl sc = obj.GetComponentInChildren<SeaControl>();
+            if (sc != null)
             {
-                // 최초 인식된 마커 기준으로 테이블 중심 계산
-                tableCenter = trackedImage.transform.position + trackedImage.transform.forward * centerOffsetDistance;
-                centerInitialized = true;
-                Debug.Log($"[reset]center : {tableCenter}");
+                sc.InitializeBounds(); // 바운드를 옮긴 위치로 갱신
             }
-            UpdateSpawnObject(trackedImage);
         }
 
         foreach (ARTrackedImage trackedImage in eventArgs.updated)
         {
-            if (trackedImage.trackingState == TrackingState.None)
-            {
-                // 이미지가 추적되지 않음
-                if (spawnedObjects.TryGetValue(trackedImage.referenceImage.name, out GameObject spawnedObject))
-                {
-                    spawnedObject.SetActive(false);
-                }
-            }
-            else
-            {
-                // 이미지가 추적 중이거나 제한적으로 추적 중
-                UpdateSpawnObject(trackedImage);
-            }
-        }
-    }
+            var name = trackedImage.referenceImage.name;
+            if (!spawnedObjects.TryGetValue(name, out var obj)) continue;
 
-    private void UpdateSpawnObject(ARTrackedImage trackedImage)
-    {
-        string referenceImageName = trackedImage.referenceImage.name;
-        GameObject obj = spawnedObjects[referenceImageName];
-
-        obj.transform.position = tableCenter;
-
-        // 콘텐츠는 마커를 바라보게 회전
-        Vector3 lookDirection = trackedImage.transform.position - tableCenter;
-        lookDirection.y = 0f; // 수평 회전만
-
-        if (lookDirection != Vector3.zero)
-            obj.transform.rotation = Quaternion.LookRotation(lookDirection);
-
-        obj.SetActive(true);
-        
-        SeaControl sc = obj.GetComponentInChildren<SeaControl>();
-        if (sc != null)
-        {
-            sc.InitializeBounds(); // 바운드를 옮긴 위치로 갱신
+            // 월드 상에서 마커 위치 ↔ 객체 위치 거리
+            float dist = Vector3.Distance(trackedImage.transform.position, obj.transform.position);
+            obj.SetActive(dist <= disableDistanceThreshold);
         }
     }
     
-    public void ResetTableCenter()
+    private void LateUpdate()
     {
-        Debug.Log("[reset]");
+        string closestName = null;
+        float closestDist = float.MaxValue;
 
-        centerInitialized = false;
-
-        // 모든 오브젝트 비활성화
-        foreach (var obj in spawnedObjects.Values)
+        // 1) 각 트래킹된 이미지 ⇆ 그 자식 오브젝트 거리 계산
+        foreach (var trackedImage in trackedImageManager.trackables)
         {
-            obj.SetActive(false);
-        }
-    }
+            if (!spawnedObjects.ContainsKey(trackedImage.referenceImage.name)) continue;
 
-    private void Update()
-    {
-       //확인용 디버그 로그
-       // Debug.Log($"Image: {trackedImageManager.trackables.count} tracked");
-       foreach (var trackedImage in trackedImageManager.trackables)
-       {
-           Debug.Log($"Image : {trackedImage.referenceImage.name}\n" +
-                     $"Pos : {trackedImage.transform.position}");
-       }
-       
+            var obj = spawnedObjects[trackedImage.referenceImage.name];
+            float d = Vector3.Distance(trackedImage.transform.position, obj.transform.position);
+            if (d < closestDist && d <= disableDistanceThreshold)
+            {
+                closestDist = d;
+                closestName = trackedImage.referenceImage.name;
+            }
+        }
+
+        // 2) 가장 가까운 것만 활성화 (나머지 비활성화)
+        foreach (var kv in spawnedObjects)
+            kv.Value.SetActive(kv.Key == closestName);
     }
+    // private void Update()
+    // {
+    //    //확인용 디버그 로그
+    //    // Debug.Log($"Image: {trackedImageManager.trackables.count} tracked");
+    //    foreach (var trackedImage in trackedImageManager.trackables)
+    //    {
+    //        Debug.Log($"Image : {trackedImage.referenceImage.name}\n" +
+    //                  $"Pos : {trackedImage.transform.position}");
+    //    }
+    //    
+    // }
 }

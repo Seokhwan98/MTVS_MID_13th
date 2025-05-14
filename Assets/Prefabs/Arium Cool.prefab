@@ -1,0 +1,197 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1830545777487896637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8001100934390534237}
+  m_Layer: 0
+  m_Name: Arium Cool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8001100934390534237
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830545777487896637}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2431143654074942182}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6637349420848372119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7787533377269932991}
+  - component: {fileID: 925888406941796852}
+  m_Layer: 0
+  m_Name: Arium Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7787533377269932991
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6637349420848372119}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.44, z: 0}
+  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2431143654074942182}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &925888406941796852
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6637349420848372119}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 1, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &305477491485214942
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8001100934390534237}
+    m_Modifications:
+    - target: {fileID: 2702281191889799736, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702281191889799736, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702281191889799736, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702281191889799736, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702281191889799736, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702281191889799736, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702281191889799736, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702281191889799736, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702281191889799736, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702281191889799736, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702281191889799736, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702281191889799736, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702281191889799736, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702281191889799736, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2841126677966819083, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+      propertyPath: height
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2841126677966819083, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+      propertyPath: radiusX
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2841126677966819083, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+      propertyPath: radiusZ
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2841126677966819083, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+      propertyPath: seaCollider
+      value: 
+      objectReference: {fileID: 925888406941796852}
+    - target: {fileID: 2841126677966819083, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+      propertyPath: seaMeshRoot
+      value: 
+      objectReference: {fileID: 6637349420848372119}
+    - target: {fileID: 3267825504449718739, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3267825504449718739, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817715634193541302, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+      propertyPath: m_Name
+      value: Arium Map
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 224102211902664732, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2702281191889799736, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7787533377269932991}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+--- !u!4 &2431143654074942182 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2702281191889799736, guid: 0d7fc395d2bc24841a42dc93d34af6b7, type: 3}
+  m_PrefabInstance: {fileID: 305477491485214942}
+  m_PrefabAsset: {fileID: 0}
