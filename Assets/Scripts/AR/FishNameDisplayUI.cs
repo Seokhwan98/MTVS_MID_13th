@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class FishNameDisplayUI : MonoBehaviour
 {
+    [SerializeField] private SoundSoureceControl wrongSound;
+    [SerializeField] private SoundSoureceControl rightSound;
     [SerializeField] private TMP_Text wrongMark;
     [SerializeField] private TMP_Text fishNameText;
     [SerializeField] private ChangeQuizData quizData;
@@ -31,8 +33,7 @@ public class FishNameDisplayUI : MonoBehaviour
     {
         if (!inGame)
         {
-            string koreanName = FishDatabase.Instance.GetKoreanNameByEnglish(fishName);
-            fishNameText.text = koreanName;
+            fishNameText.text = fishName;
         }
         else
         {
@@ -57,6 +58,7 @@ public class FishNameDisplayUI : MonoBehaviour
     
     private IEnumerator ShowWrongMark()
     {
+        wrongSound.Play();
         wrongMark.text = "X";
         wrongMark.color = Color.red;
         yield return new WaitForSeconds(1f); // 1초 표시
@@ -65,6 +67,7 @@ public class FishNameDisplayUI : MonoBehaviour
     
     private IEnumerator ShowRightMark()
     {
+        rightSound.Play();
         fishNameText.text = "";
         wrongMark.text = "O";
         wrongMark.color = Color.green;
@@ -81,7 +84,6 @@ public class FishNameDisplayUI : MonoBehaviour
 
     public void SetFishNameText()
     {
-        string koreanName = FishDatabase.Instance.GetKoreanNameByEnglish(quizData.CurrentAnswerName);
-        fishNameText.text = koreanName;
+        fishNameText.text = quizData.CurrentAnswerName;
     }
 }

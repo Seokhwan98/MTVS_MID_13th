@@ -14,6 +14,7 @@ public class ChangeQuizData : MonoBehaviour
     private string currentAnswerKoreanName;
     private FishData fishData;
     
+    [SerializeField] private Transform quizParent;
     [SerializeField] private TMP_Text koreanNameText;
     [SerializeField] private TMP_Text habitatText;
     [SerializeField] private TMP_Text characteristicsText;
@@ -21,6 +22,8 @@ public class ChangeQuizData : MonoBehaviour
     [SerializeField] private TMP_Text behaviorText;
     [SerializeField] private TMP_Text etcText;
 
+    private GameObject currentInstance;
+    
     public void SetRegionNow(int habitat)
     {
         regionNow = habitat;
@@ -30,7 +33,7 @@ public class ChangeQuizData : MonoBehaviour
     {
         fishData = FishDatabase.Instance.GetRandomFishNameByHabitat(regionNow);
         
-        currentAnswerKoreanName = fishData.englishName;
+        currentAnswerKoreanName = fishData.koreanName;
         
         koreanNameText.text = fishData.koreanName;
         habitatText.text = ((Region)fishData.habitat == Region.hot) ? "열대 바다" : "온대 바다";
@@ -38,6 +41,18 @@ public class ChangeQuizData : MonoBehaviour
         foodText.text = fishData.food;
         behaviorText.text = fishData.behavior;
         etcText.text = fishData.etc;
+
+        fishData.prefab.GetComponent<FreeSwimming>().enabled = false;
+        fishData.prefab.GetComponent<FishTouchHandler>().enabled = false;
+        currentInstance = Instantiate(fishData.prefab, quizParent);
+        currentInstance.transform.localPosition = Vector3.zero;
+        currentInstance.transform.localRotation = Quaternion.identity;
+        currentInstance.transform.localScale = Vector3.one;
+    }
+
+    public void DestroyInstance()
+    {
+        Destroy(currentInstance);
     }
     
     public bool CheckAnswer(string userInput)

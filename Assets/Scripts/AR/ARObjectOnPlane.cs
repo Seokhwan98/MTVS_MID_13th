@@ -16,6 +16,7 @@ public class ARObjectOnPlane : MonoBehaviour
     private ARPlaneManager planeManager;
     private List<ARRaycastHit> hits = new();
     private static bool hasSpawned = false;
+    private bool hasStarted = false;
     
     void Awake()
     {
@@ -24,8 +25,16 @@ public class ARObjectOnPlane : MonoBehaviour
         planeManager = GetComponent<ARPlaneManager>();
     }
 
+    private void Start()
+    {
+        hasSpawned = false;
+        hasStarted = false;
+    }
+
     void Update()
     {
+        if (!hasStarted) return;
+        
         if (Touchscreen.current == null || hasSpawned)
             return;
 
@@ -57,6 +66,11 @@ public class ARObjectOnPlane : MonoBehaviour
                 OnComplete?.Invoke();
             }
         }
+    }
+
+    public void SetStart()
+    {
+        hasStarted = true;
     }
 
     public void ResetAR()
@@ -95,5 +109,6 @@ public class ARObjectOnPlane : MonoBehaviour
 
         // 상태 초기화
         hasSpawned = false;
+        hasStarted = false;
     }
 }
