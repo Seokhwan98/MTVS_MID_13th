@@ -33,7 +33,19 @@ public class NPCController : MonoBehaviour
     
     [SerializeField] private DynamicNavMesh navMeshScript;
     
+    
+    
     private Transform mainCamera;
+
+    private void OnEnable()
+    {
+        FishTouchEvents.OnWhaleCalled += OnCallOrByeButtonClicked;
+    }
+    
+    private void OnDisable()
+    {
+        FishTouchEvents.OnWhaleCalled -= OnCallOrByeButtonClicked;
+    }
     
     private void Start()
     {
@@ -241,6 +253,4 @@ public class NPCController : MonoBehaviour
         agent.isStopped = false;
         MoveToRandomPoint();
     }
-    
-    
 }
