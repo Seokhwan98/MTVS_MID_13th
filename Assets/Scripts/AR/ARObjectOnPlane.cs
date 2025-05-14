@@ -1,13 +1,15 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
 public class ARObjectOnPlane : MonoBehaviour
 {
-    [SerializeField] private GameObject spawnPrefab;
+    public UnityEvent OnComplete;
+    public GameObject spawnPrefab;
     
     private ARRaycastManager raycastManager;
     private ARAnchorManager anchorManager;
@@ -52,7 +54,30 @@ public class ARObjectOnPlane : MonoBehaviour
                     item.gameObject.SetActive(false);
                 }
                 planeManager.enabled = false;
+                OnComplete?.Invoke();
             }
         }
+    }
+
+    public void ResetAR()
+    {
+        // 배치된 오브젝트 제거
+        var anchorObjects = GameObject.FindGameObjectsWithTag("PlacedObject"); // 프리팹에 태그 붙여둘 것
+        foreach (var obj in anchorObjects)
+        {
+            Destroy(obj);
+        }
+
+        // AnchorManager는 자동으로 관리되므로 따로 제거하지 않아도 됨 (필요시 직접 추적)
+
+        // Plane 감지 다시 활성화
+        planeManager.enabled = true;
+        foreach (var plane in planeManager.trackables)
+        {
+            plane.gameObject.SetActive(true);
+        }
+
+        // 상태 초기화
+        hasSpawned = false;
     }
 }
