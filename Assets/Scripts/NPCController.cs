@@ -31,7 +31,7 @@ public class NPCController : MonoBehaviour
     public float height = 2f; //공중 높이설정치
     public float rotationsize = 45f;
     
-    private DynamicNavMesh navMeshScript;
+    [SerializeField] private DynamicNavMesh navMeshScript;
     
     private Transform mainCamera;
     
@@ -56,7 +56,6 @@ public class NPCController : MonoBehaviour
         GameObject npcMap = GameObject.Find("NPCmap");  // npc 맵 오브젝트 이름을 정확하게 사용
         if (npcMap != null)
         {
-            navMeshScript = npcMap.GetComponent<DynamicNavMesh>();
             if (navMeshScript != null)
             {
                 // NavMesh 빌드 완료 후 이동
