@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uB871\uB178\uC988 \uBC84\uD130\uD50C\uB77C\uC774\uD53C\uC26C"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7774326845647256262, guid: 95d1f7f9a6622ab4a8e1e34c14976dce, type: 3}
+  habitat: 1
+  englishName: LongnoseButterflyfish
+  koreanName: "\uB871\uB178\uC988 \uBC84\uD130\uD50C\uB77C\uC774\uD53C\uC26C"
+  behavior: "\uAE34 \uC8FC\uB465\uC774\uB85C \uAD6C\uC11D\uAD6C\uC11D \uC3D9\uC3D9"
+  etc: "\uBFB0\uC871\uD55C \uC8FC\uB465\uC774 \uD0D0\uC0C9 \uB2A5\uB825 \uCD5C\uAC15"
+  characteristics: "\uB178\uB780\uC0C9 \uAE34 \uC8FC\uB465\uC774, \uADC0\uC5EC\uC6C0
+    \uB05D\uD310\uC655"
+  food: "\uC791\uC740 \uD574\uC591\uC0DD\uBB3C"

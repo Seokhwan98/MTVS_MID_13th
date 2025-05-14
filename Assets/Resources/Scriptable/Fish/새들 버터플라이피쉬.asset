@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uC0C8\uB4E4 \uBC84\uD130\uD50C\uB77C\uC774\uD53C\uC26C"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 8138693550640892485, guid: 97e008540414a3b40922f48b47405797, type: 3}
+  habitat: 1
+  englishName: SaddleButterflyfish
+  koreanName: "\uC0C8\uB4E4 \uBC84\uD130\uD50C\uB77C\uC774\uD53C\uC26C"
+  behavior: "\uB4F1\uC5D0 \uC548\uC7A5\uCC98\uB7FC \uC0DD\uAE34 \uBB34\uB2AC"
+  etc: "\uB4F1 \uBB34\uB2AC \uB355\uC5D0 \uC774\uB984\uB3C4 \uC0C8\uB4E4"
+  characteristics: "\uB4F1\uC5D0 \uAC80\uC740 \uBC18\uB2EC \uBAA8\uC591 \uD3EC\uC778\uD2B8"
+  food: "\uC791\uC740 \uD574\uC591\uC0DD\uBB3C, \uD574\uC870\uB958"

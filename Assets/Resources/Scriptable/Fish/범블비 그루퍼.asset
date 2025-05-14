@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uBC94\uBE14\uBE44 \uADF8\uB8E8\uD37C"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 9057084917297727130, guid: 739c7cf9105218045a0399b2077cec41, type: 3}
+  habitat: 1
+  englishName: BumblebeeGrouper
+  koreanName: "\uBC94\uBE14\uBE44 \uADF8\uB8E8\uD37C"
+  behavior: "\uD070 \uC785\uC73C\uB85C \uAC11\uAC01\uB958 \uC0AC\uB0E5"
+  etc: "\uB178\uB780 \uC904\uBB34\uB2AC\uB85C \uBC8C\uCC98\uB7FC \uBCF4\uC784"
+  characteristics: "\uB178\uB791 \uAC80\uC815 \uC2A4\uD2B8\uB77C\uC774\uD504"
+  food: "\uC791\uC740 \uBB3C\uACE0\uAE30, \uAC11\uAC01\uB958"

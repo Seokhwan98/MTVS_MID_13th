@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uD3EC\uC544\uC774 \uBC84\uD130\uD50C\uB77C\uC774\uD53C\uC26C"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 9013336678220942620, guid: 66763a4d68a073a4d81b45760ca2d6a3, type: 3}
+  habitat: 2
+  englishName: FoureyeButterflyfish
+  koreanName: "\uD3EC\uC544\uC774 \uBC84\uD130\uD50C\uB77C\uC774\uD53C\uC26C"
+  behavior: "\uB208\uCC98\uB7FC \uBCF4\uC774\uB294 \uC810\uC73C\uB85C \uD3EC\uC2DD\uC790
+    \uC18D\uC784\uC218"
+  etc: "\uB4A4\uD1B5\uC218\uC5D0 \uAC00\uC9DC \uB208\uBC15\uC774 \uC788\uC74C"
+  characteristics: "\uBAB8\uC5D0 \uB124 \uAC1C\uC758 \uC810\uBC15\uC774, \uD63C\uB780\uC758
+    \uB2EC\uC778"
+  food: "\uC791\uC740 \uD574\uC591\uC0DD\uBB3C"

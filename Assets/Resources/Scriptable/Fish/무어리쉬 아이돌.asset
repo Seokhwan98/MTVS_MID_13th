@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uBB34\uC5B4\uB9AC\uC26C \uC544\uC774\uB3CC"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 6502596866369865551, guid: f57c478525fc69c469a15625c1f44097, type: 3}
+  habitat: 1
+  englishName: MoorishIdol
+  koreanName: "\uBB34\uC5B4\uB9AC\uC26C \uC544\uC774\uB3CC"
+  behavior: "\uAE34 \uAE43\uD138\uCC98\uB7FC \uB298\uC5B4\uC9C4 \uC9C0\uB290\uB7EC\uBBF8"
+  etc: "\uB2C8\uBAA8 \uCE5C\uAD6C \uAE38\uC758 \uBAA8\uB378"
+  characteristics: "\uB178\uB791 \uAC80\uC815 \uD770 \uC904\uBB34\uB2AC"
+  food: "\uD50C\uB791\uD06C\uD1A4, \uD574\uCD08"

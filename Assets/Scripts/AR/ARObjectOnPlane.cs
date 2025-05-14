@@ -62,10 +62,26 @@ public class ARObjectOnPlane : MonoBehaviour
     public void ResetAR()
     {
         // 배치된 오브젝트 제거
-        var anchorObjects = GameObject.FindGameObjectsWithTag("PlacedObject"); // 프리팹에 태그 붙여둘 것
-        foreach (var obj in anchorObjects)
+        try
         {
-            Destroy(obj);
+            var anchorObjects = GameObject.FindGameObjectsWithTag("PlacedObject");
+
+            if (anchorObjects.Length == 0)
+            {
+                Debug.Log("[AR] 제거할 오브젝트가 없습니다.");
+                return;
+            }
+
+            foreach (var obj in anchorObjects)
+            {
+                Destroy(obj);
+            }
+
+            Debug.Log("[AR] 모든 배치된 오브젝트 제거 완료");
+        }
+        catch (UnityException e)
+        {
+            Debug.LogWarning($"[AR] 태그 'PlacedObject'가 존재하지 않습니다. 태그를 등록해주세요.\n{e.Message}");
         }
 
         // AnchorManager는 자동으로 관리되므로 따로 제거하지 않아도 됨 (필요시 직접 추적)

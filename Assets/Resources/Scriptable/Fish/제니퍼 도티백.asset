@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uC81C\uB2C8\uD37C \uB3C4\uD2F0\uBC31"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3602320439311450983, guid: e687f71822e5a7b4fa27077d01d0d475, type: 3}
+  habitat: 1
+  englishName: JennniferDottyback
+  koreanName: "\uC81C\uB2C8\uD37C \uB3C4\uD2F0\uBC31"
+  behavior: "\uBC14\uC704 \uD2C8\uC5D0\uC11C \uC870\uC6A9\uD788 \uB2E4\uB2D8"
+  etc: "\uC774\uB984\uAC12 \uD558\uB294 \uACE0\uAE09\uC9C4 \uB290\uB08C"
+  characteristics: "\uBCF4\uB77C\uBE5B \uBAB8\uD1B5"
+  food: "\uC791\uC740 \uAC11\uAC01\uB958"

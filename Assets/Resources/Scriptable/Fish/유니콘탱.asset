@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uC720\uB2C8\uCF58\uD0F1"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 4071820326859771619, guid: 4b2b9b0ced2039143aff5d841c174a6b, type: 3}
+  habitat: 1
+  englishName: UnicornTang
+  koreanName: "\uC720\uB2C8\uCF58\uD0F1"
+  behavior: "\uB290\uAE0B\uD558\uAC8C \uB2E4\uB2C8\uBA70 \uBC14\uB2E4\uB97C \uB204\uBE54"
+  etc: "\uBC14\uB2E4\uC758 \uC720\uB2C8\uCF58 \uBCC4\uBA85 \uBCF4\uC720"
+  characteristics: "\uB3DB\uCC98\uB7FC \uD3BC\uCCD0\uC9C4 \uCEE4\uB2E4\uB780 \uC9C0\uB290\uB7EC\uBBF8"
+  food: "\uD574\uC870\uB958"

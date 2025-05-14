@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uBE14\uB799\uD0F1"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 5762220819805832626, guid: e64453c51d828ee48be56020aae46f26, type: 3}
+  habitat: 1
+  englishName: BlackTang
+  koreanName: "\uBE14\uB799\uD0F1"
+  behavior: "\uD63C\uC790\uC11C \uC870\uC6A9\uD788 \uB2E4\uB2C8\uB294 \uC194\uB85C\uD30C"
+  etc: "\uC218\uC871\uAD00 \uB9C8\uB2C8\uC544\uB4E4 \uC0AC\uC774\uC5D0\uC120 \uB808\uC804\uB4DC\uAE09
+    \uC778\uAE30"
+  characteristics: "\uC62C\uBE14\uB799\uC73C\uB85C \uC2DC\uD06C\uD558\uAC8C \uAFB8\uBBFC
+    \uC0C1\uB0A8\uC790 \uBB3C\uACE0\uAE30"
+  food: "\uD574\uC870\uB958"

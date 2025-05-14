@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uBC1C\uB9AC\uB098 \uC5D4\uC824\uD53C\uC26C"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 5155832332735975555, guid: db527e96c40aeea4d92184567b355d80, type: 3}
+  habitat: 1
+  englishName: BallinaAngelfish
+  koreanName: "\uBC1C\uB9AC\uB098 \uC5D4\uC824\uD53C\uC26C"
+  behavior: "\uD63C\uC790 \uB610\uB294 \uC791\uC740 \uBB34\uB9AC\uB85C \uD65C\uB3D9,\uC0B0\uD638\uCD08
+    \uADFC\uCC98\uB97C \uB5A0\uB098\uC9C0 \uC54A\uC74C"
+  etc: "\uC554\uCEF7\uC5D0\uC11C \uC218\uCEF7\uC73C\uB85C \uBCC0\uD560 \uC218 \uC788\uC74C"
+  characteristics: "\uBC1D\uC740 \uD30C\uB780\uC0C9\uACFC \uB178\uB780\uC0C9\uC774
+    \uD2B9\uC9D5\uC778 \uC0B0\uD638\uCD08 \uC5B4\uC885"
+  food: "\uD574\uBA74\uB3D9\uBB3C, \uAC11\uAC01\uB958, \uD574\uC870\uB958"

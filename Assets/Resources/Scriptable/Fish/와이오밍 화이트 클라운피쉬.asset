@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uC640\uC774\uC624\uBC0D \uD654\uC774\uD2B8 \uD074\uB77C\uC6B4\uD53C\uC26C"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 6430018797071504065, guid: 1bd2d3501904dca45b294090776b6208, type: 3}
+  habitat: 1
+  englishName: WyomingWhiteClownfish
+  koreanName: "\uC640\uC774\uC624\uBC0D \uD654\uC774\uD2B8 \uD074\uB77C\uC6B4\uD53C\uC26C"
+  behavior: "\uD654\uC774\uD2B8 \uBC14\uB514\uC5D0 \uBE14\uB799 \uC544\uC6C3\uB77C\uC778"
+  etc: "\uBBF8\uAD6D\uC0B0 \uACE0\uAE09 \uD488\uC885"
+  characteristics: "\uD770 \uBAB8\uD1B5\uC5D0 \uAC80\uC740 \uD14C\uB450\uB9AC"
+  food: "\uD50C\uB791\uD06C\uD1A4, \uC791\uC740 \uAC11\uAC01\uB958"

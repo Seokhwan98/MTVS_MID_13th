@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uD310\uB2E4 \uC5D4\uC824\uD53C\uC26C"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 4753597760071766136, guid: bfbb8f45f6173fb4eb836901ae0e449e, type: 3}
+  habitat: 1
+  englishName: PandaAngelfish
+  koreanName: "\uD310\uB2E4 \uC5D4\uC824\uD53C\uC26C"
+  behavior: "\uC0B0\uD638 \uD2C8\uC5D0\uC11C \uADC0\uC5FD\uAC8C \uC6C0\uC9C1\uC784"
+  etc: "\uCD08\uBCF4\uC790 \uC778\uAE30 \uD3ED\uBC1C"
+  characteristics: "\uAC80\uC740\uC0C9 \uD558\uC580\uC0C9 \uD310\uB2E4\uB8E9"
+  food: "\uD574\uBA74\uB3D9\uBB3C, \uD574\uC870\uB958"

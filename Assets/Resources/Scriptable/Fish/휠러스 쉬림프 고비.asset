@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uD720\uB7EC\uC2A4 \uC26C\uB9BC\uD504 \uACE0\uBE44"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7410309649245827894, guid: d1e61cd45f6bde04faca33869c9e3b06, type: 3}
+  habitat: 1
+  englishName: WheelersShrimpGoby
+  koreanName: "\uD720\uB7EC\uC2A4 \uC26C\uB9BC\uD504 \uACE0\uBE44"
+  behavior: "\uC0C8\uC6B0\uB791 \uCF64\uBE44 \uD50C\uB808\uC774"
+  etc: "\uC26C\uB9BC\uD504\uB791 \uAC19\uC774 \uC0B4\uC544\uAC00\uB294 \uCE5C\uAD6C"
+  characteristics: "\uC904\uBB34\uB2AC \uBC14\uB514\uC640 \uC624\uB80C\uC9C0 \uD3EC\uC778\uD2B8"
+  food: "\uC791\uC740 \uAC11\uAC01\uB958"

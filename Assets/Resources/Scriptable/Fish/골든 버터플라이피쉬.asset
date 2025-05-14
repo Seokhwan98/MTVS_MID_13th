@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uACE8\uB4E0 \uBC84\uD130\uD50C\uB77C\uC774\uD53C\uC26C"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 92497191984817677, guid: da2d41113277e6342999630d480de12f, type: 3}
+  habitat: 1
+  englishName: GoldenButterfly
+  koreanName: "\uACE8\uB4E0 \uBC84\uD130\uD50C\uB77C\uC774\uD53C\uC26C"
+  behavior: "\uBE5B\uB098\uB294 \uAE08\uC0C9\uC73C\uB85C \uBC14\uB2E4\uB97C \uC7A5\uC2DD"
+  etc: "\uD669\uAE08\uBE5B\uC774\uB77C \uACE0\uAE09\uC2A4\uB7EC\uC6C0 \uBFDC\uBFDC"
+  characteristics: "\uC804\uC2E0 \uACE8\uB4DC \uCEEC\uB7EC, \uB208\uAE38 \uAC15\uD0C8\uB7EC"
+  food: "\uC791\uC740 \uD574\uC591\uC0DD\uBB3C, \uD574\uC870\uB958"
