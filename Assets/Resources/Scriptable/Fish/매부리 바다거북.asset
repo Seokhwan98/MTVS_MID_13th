@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uB9E4\uBD80\uB9AC \uBC14\uB2E4\uAC70\uBD81"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 8230579411645296635, guid: 95e668a28cbf1be40b6eed6480cc8e1e, type: 3}
+  habitat: 1
+  englishName: HawksbillTurtle
+  koreanName: "\uB9E4\uBD80\uB9AC \uBC14\uB2E4\uAC70\uBD81"
+  behavior: "\uC0B0\uD638 \uD2C8\uC0C8\uC5D0\uC11C \uD574\uBA74\uB3D9\uBB3C \uC0AC\uB0E5"
+  etc: "\uBD80\uB9AC\uAC00 \uB9E4\uCC98\uB7FC \uBFB0\uC871\uD568"
+  characteristics: "\uC791\uACE0 \uB0A0\uB835\uD55C \uB4F1\uAECD\uC9C8"
+  food: "\uD574\uBA74\uB3D9\uBB3C"

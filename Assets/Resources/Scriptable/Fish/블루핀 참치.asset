@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uBE14\uB8E8\uD540 \uCC38\uCE58"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 2552671844760119945, guid: 6ac62bc046b78d144bef2a0e628d82d5, type: 3}
+  habitat: 2
+  englishName: BluefinTuna
+  koreanName: "\uBE14\uB8E8\uD540 \uCC38\uCE58"
+  behavior: "\uBC14\uB2E4\uC758 \uB85C\uCF13\uCC98\uB7FC \uBE60\uB974\uAC8C \uD5E4\uC5C4"
+  etc: "\uCD08\uB300\uD615 \uC5B4\uC885, \uC778\uAE30 \uD68C \uC7AC\uB8CC"
+  characteristics: "\uD478\uB978 \uB4F1 \uC9C0\uB2CC \uCC38\uCE58"
+  food: "\uC791\uC740 \uBB3C\uACE0\uAE30, \uC624\uC9D5\uC5B4"

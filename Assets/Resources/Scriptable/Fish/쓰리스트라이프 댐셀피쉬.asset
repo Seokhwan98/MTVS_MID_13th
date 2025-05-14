@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uC4F0\uB9AC\uC2A4\uD2B8\uB77C\uC774\uD504 \uB310\uC140\uD53C\uC26C"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 728028431859523684, guid: 7ab027dd4a72ff44b95c384a768fdf2e, type: 3}
+  habitat: 1
+  englishName: ThreeStripeDamsel
+  koreanName: "\uC4F0\uB9AC\uC2A4\uD2B8\uB77C\uC774\uD504 \uB310\uC140\uD53C\uC26C"
+  behavior: "\uAC80\uC740 \uC904 \uC138 \uAC1C\uB85C \uD3EC\uC778\uD2B8"
+  etc: "\uC904\uBB34\uB2AC \uB355\uD6C4\uB4E4\uC758 \uCD5C\uC560"
+  characteristics: "\uAC80\uC740 \uC904 3\uAC1C\uAC00 \uB531\uB531 \uBC15\uD78C \uD770
+    \uBAB8"
+  food: "\uD50C\uB791\uD06C\uD1A4"

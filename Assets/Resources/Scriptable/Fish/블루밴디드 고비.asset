@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uBE14\uB8E8\uBC34\uB514\uB4DC \uACE0\uBE44"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 184675847828092861, guid: 53e146deb8ee0a843b669e523584cfe6, type: 3}
+  habitat: 1
+  englishName: BluebandedGoby
+  koreanName: "\uBE14\uB8E8\uBC34\uB514\uB4DC \uACE0\uBE44"
+  behavior: "\uBAA8\uB798\uBC14\uB2E5\uC5D0\uC11C \uD1A1\uD1A1 \uD280\uB294 \uC6C0\uC9C1\uC784"
+  etc: "\uC791\uC9C0\uB9CC \uC5D0\uB108\uC9C0 \uB118\uCE68"
+  characteristics: "\uD30C\uB780 \uC904\uBB34\uB2AC\uAC00 \uBC18\uC9DD\uBC18\uC9DD"
+  food: "\uC791\uC740 \uAC11\uAC01\uB958"

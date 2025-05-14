@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uADF8\uB9B0 \uBC14\uB2E4\uAC70\uBD81"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 4671732492452227065, guid: 24570ed1d2a2fd74e8024ac69cbbe3a4, type: 3}
+  habitat: 1
+  englishName: GreenTurtle
+  koreanName: "\uADF8\uB9B0 \uBC14\uB2E4\uAC70\uBD81"
+  behavior: "\uD574\uCD08\uBC2D\uC744 \uCC9C\uCC9C\uD788 \uB204\uBE44\uB294 \uD790\uB9C1\uB7EC"
+  etc: "\uCD08\uB85D \uBC14\uB2E4\uAC70\uBD81\uC758 \uB300\uD45C\uC8FC\uC790"
+  characteristics: "\uB465\uADFC \uCD08\uB85D \uB4F1\uAECD\uC9C8"
+  food: "\uD574\uC870\uB958"

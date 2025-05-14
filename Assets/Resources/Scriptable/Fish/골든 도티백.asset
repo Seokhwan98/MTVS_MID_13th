@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uACE8\uB4E0 \uB3C4\uD2F0\uBC31"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 4058226065190005283, guid: 59ab7bfed34aed440acea59b69dac464, type: 3}
+  habitat: 1
+  englishName: GoldenDottyback
+  koreanName: "\uACE8\uB4E0 \uB3C4\uD2F0\uBC31"
+  behavior: "\uAD6C\uC11D\uAD6C\uC11D \uC740\uC2E0\uC758 \uB2EC\uC778"
+  etc: "\uD669\uAE08\uBE5B \uBAB8\uD1B5"
+  characteristics: "\uB178\uB780\uC0C9 \uBAB8, \uADC0\uC5EC\uC6C0 \uAC00\uB4DD"
+  food: "\uC791\uC740 \uAC11\uAC01\uB958"

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uC870\uC2A4\uD130 \uBC84\uD130\uD50C\uB77C\uC774\uD53C\uC26C"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1450256912754114608, guid: 1fbf8beb35e2e364ea09f1199e365706, type: 3}
+  habitat: 1
+  englishName: ZosterButterflyfish
+  koreanName: "\uC870\uC2A4\uD130 \uBC84\uD130\uD50C\uB77C\uC774\uD53C\uC26C"
+  behavior: "\uC628\uB300 \uBC14\uB2E4\uC758 \uAC80\uC740 \uB0A0\uAC1C"
+  etc: "\uD751\uBC31 \uB0A0\uAC1C\uB85C \uBA4B\uC9D0 \uD3ED\uBC1C"
+  characteristics: "\uAC80\uC740 \uBAB8\uC5D0 \uD770 \uB760 \uD558\uB098, \uC2EC\uD50C
+    \uC774\uC988 \uBCA0\uC2A4\uD2B8"
+  food: "\uC791\uC740 \uD574\uC591\uC0DD\uBB3C, \uD574\uC870\uB958"

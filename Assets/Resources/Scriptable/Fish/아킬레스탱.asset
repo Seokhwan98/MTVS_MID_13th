@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uC544\uD0AC\uB808\uC2A4\uD0F1"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7206346733388345847, guid: 1495f89617e1ac44686d1971de51c4bf, type: 3}
+  habitat: 1
+  englishName: AchilesTang
+  koreanName: "\uC544\uD0AC\uB808\uC2A4\uD0F1"
+  behavior: "\uD65C\uBC1C\uD558\uAC8C \uD5E4\uC5C4\uCE58\uBA70 \uC0B0\uD638\uCD08\uB97C
+    \uB204\uBE44\uB294 \uBAA8\uD5D8\uAC00"
+  etc: "\uC131\uACA9\uC774 \uAE4C\uCE60\uD574\uC11C \uB2E4\uB978 \uBB3C\uACE0\uAE30\uB791
+    \uC2F8\uC6B8 \uC218\uB3C4 \uC788\uC74C"
+  characteristics: "\uAC80\uC740 \uBAB8\uC5D0 \uC8FC\uD669 \uD3EC\uC778\uD2B8! \uBC14\uB2E4\uC758
+    \uB7F0\uC6E8\uC774 \uBAA8\uB378"
+  food: "\uD574\uC870\uB958, \uC870\uB958"

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uCF54\uB77C\uC874 \uB310\uC140\uD53C\uC26C"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1536843517053375575, guid: ac89b2ef748912a43b3d133d7cd720c2, type: 3}
+  habitat: 1
+  englishName: CorazonDamsel
+  koreanName: "\uCF54\uB77C\uC874 \uB310\uC140\uD53C\uC26C"
+  behavior: "\uC791\uC9C0\uB9CC \uC2EC\uC7A5(\uCF54\uB77C\uC874) \uAC19\uC740 \uC874\uC7AC"
+  etc: "\uC791\uC544\uB3C4 \uAE61\uD328 \uAE30\uC9C8 \uC788\uC74C"
+  characteristics: "\uBC1D\uC740 \uB178\uB780\uC0C9 \uBC14\uB514"
+  food: "\uD50C\uB791\uD06C\uD1A4"

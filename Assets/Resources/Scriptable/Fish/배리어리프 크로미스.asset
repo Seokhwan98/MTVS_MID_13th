@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uBC30\uB9AC\uC5B4\uB9AC\uD504 \uD06C\uB85C\uBBF8\uC2A4"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3150635651845839584, guid: 2a419ff1b2fbe0c43abee4b03f54d86d, type: 3}
+  habitat: 1
+  englishName: BarrierReefChromis
+  koreanName: "\uBC30\uB9AC\uC5B4\uB9AC\uD504 \uD06C\uB85C\uBBF8\uC2A4"
+  behavior: "\uBB34\uB9AC \uC9C0\uC5B4 \uB5BC\uC9C0\uC5B4 \uB2E4\uB2D8"
+  etc: "\uB5BC \uC9C0\uC5B4\uC11C \uC218\uC870\uB97C \uAF49 \uCC44\uC6C0"
+  characteristics: "\uC740\uBE5B \uBAB8\uC5D0 \uC5F0\uB450\uBE5B \uD3EC\uC778\uD2B8"
+  food: "\uD50C\uB791\uD06C\uD1A4"

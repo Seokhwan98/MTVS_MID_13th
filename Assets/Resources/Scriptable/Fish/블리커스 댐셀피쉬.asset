@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a5d18883bf727c499eff75012975dfa, type: 3}
+  m_Name: "\uBE14\uB9AC\uCEE4\uC2A4 \uB310\uC140\uD53C\uC26C"
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 4309283693814060234, guid: c7ce3eff4111bbf41820c9330677b612, type: 3}
+  habitat: 2
+  englishName: BleekersDamsel
+  koreanName: "\uBE14\uB9AC\uCEE4\uC2A4 \uB310\uC140\uD53C\uC26C"
+  behavior: "\uC790\uC2E0\uB9CC\uC758 \uACF5\uAC04 \uC0AC\uC218"
+  etc: "\uAD6C\uC5ED \uC2F8\uC6C0 \uC798\uD568"
+  characteristics: "\uBC1D\uC740 \uD30C\uB780 \uBAB8"
+  food: "\uD50C\uB791\uD06C\uD1A4"
